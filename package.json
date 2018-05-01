@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "Add route function to sails.locals to be able to get the URL of a route by it's name and replace the named parameters by their values automatically",
   "main": "index.js",
+  "sails": {
+    "isHook": true,
+    "hookName": "route"
+  },
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha -R spec"
   },
   "repository": {
     "type": "git",
