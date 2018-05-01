@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-route",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Bind route function to sails.locals to get the URL of a route by it's name property and replace the named parameters by their values automatically",
   "main": "index.js",
   "sails": {

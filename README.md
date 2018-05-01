@@ -7,7 +7,7 @@ How to use :
 ```js
 // Some routes
 'GET /foo/:id': {
-  name: 'foo'
+  name: 'foo',
   controller: 'SomeController',
   action: 'bar'
 // Some routes
