@@ -1,0 +1,33 @@
+{
+  "name": "sails-hook-route",
+  "version": "0.0.1",
+  "description": "Add route function to sails.locals to be able to get the URL of a route by it's name and replace the named parameters by their values automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melchyore/sails-hook-route.git"
+  },
+  "keywords": [
+    "sails",
+    "route",
+    "named_parameters",
+    "hook",
+    "sails-hook"
+  ],
+  "author": "Melchyore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Melchyore/sails-hook-route/issues"
+  },
+  "homepage": "https://github.com/Melchyore/sails-hook-route#readme",
+  "dependencies": {
+    "sails": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "5.1.1"
+  }
+}
