@@ -1,7 +1,15 @@
 # sails-hook-route
 
-How to use :
+[![NPM version](https://badge.fury.io/js/sails-hook-route.svg)](https://badge.fury.io/js/sails-hook-route)
 
+Laravel-like route function for Sailsjs.
+
+# Installation
+```sh
+$ npm install sails-hook-route
+```
+
+# How to use
 1) In your config/routes.js file, add a name property for a route you want to be named :
 
 ```js
