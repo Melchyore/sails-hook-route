@@ -25,18 +25,21 @@ module.exports = sails => {
         let route = sails.router.namedRoutes[routeName]
 
         if (!route) {
-          throw new Error('No named route : ' + routeName + '\n Maybe you missed the name field?')
+          throw new Error('No named route : ' + routeName + '\n Maybe you missed the name property?')
         }
 
         let parameters = route.match(new RegExp(/:[a-zA-Z_]+/, 'g'))
 
         if (parameters) {
-          if (parameters.length !== parametersValues.length) {
-            console.warn('Length of named parameters (' + parameters.length + ') is not the same as the length of values ' + parametersValues.length + ' ')
+          let parametersLength = parameters.length
+          let valuesLength = parametersValues.length
+
+          if (parametersLength !== valuesLength) {
+            console.warn('Length of named parameters (' + parametersLength + ') is not the same as the length of values ' + valuesLength + ' ')
           }
 
-          for (let key of parameters.keys()) {
-            route = route.replace(parameters[key], parametersValues[key])
+          for (let i = 0; i < parametersLength; ++i) {
+            route = route.replace(parameters[i], parametersValues[i])
           }
         }
 
