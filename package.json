@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Melchyore/sails-hook-route#readme",
   "dependencies": {
-    "sails": "1.0.1"
+    "@sailshq/lodash": "^3.10.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",

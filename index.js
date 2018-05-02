@@ -1,5 +1,5 @@
 let _ = require('@sailshq/lodash')
-let detectVerb = require('./node_modules/sails/lib/util/detect-verb')
+let detectVerb = require('./lib/detect-verb')
 
 module.exports = sails => {
   return {
